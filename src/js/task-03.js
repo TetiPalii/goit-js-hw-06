@@ -26,3 +26,31 @@
 // listRef.insertAdjacentHTML('afterbegin', imgRef)
 
 
+
+class Storage {
+  constructor(items) {
+    this.items = items;
+  }
+  getItems() {
+    return this.items
+  }
+  addItem(item) {
+    this.items.push(item);
+
+  }
+  removeItem(itemToRemove) {
+    return this.items.find((item, idx) => {
+      if (itemToRemove === item) {
+        this.items.splice(idx, 1)
+        
+      }
+      return this.items
+    })
+  
+  }
+}
+const storage = new Storage([1, 2, 3])
+console.log(storage)
+console.log(storage.getItems())
+console.log(storage.removeItem(1))
+console.log(storage.getItems())
