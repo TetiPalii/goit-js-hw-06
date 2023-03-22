@@ -7,14 +7,16 @@ function onBtnClick(event) {
     const formData = new FormData(event.currentTarget);
     
     formData.forEach((value, name) => {
+        
         if (value === "" || name === "") {
         console.log("Alert")
         }
         else {
-            const formElements = event.currentTarget.elements;
+            const  {elements: {email, password}} = event.currentTarget
+            // const formElements = event.currentTarget.elements;
             const userData = {};
-            userData.email = formElements.email.value;
-            userData.password = formElements.password.value;
+            userData.email = email.value;
+            userData.password = password.value;
             console.log(userData);
             
         }
