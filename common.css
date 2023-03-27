@@ -29,8 +29,8 @@ button {
   list-style: none;
 }
 
-.box-first{
-  background-color: red;
+.box{
+ 
   width:30px;
   height: 30px;
 }
