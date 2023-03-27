@@ -3,9 +3,15 @@ inputRef.addEventListener('blur', onInputActionBlur);
 
 function onInputActionBlur(event) {
   
-     if (event.currentTarget.value.length === Number(inputRef.getAttribute('data-length'))) {
-         inputRef.classList.add('valid');
-         console.log('true')
+     if (event.currentTarget.value.length !== Number(inputRef.getAttribute('data-length'))) {
+          console.log('false'); inputRef.classList.add('invalid');
+         
+          
    }
-     else { console.log('false'); inputRef.classList.add('invalid');}
+     else if (event.currentTarget.classList.contains('invalid')) {
+          inputRef.classList.remove('invalid');
+          inputRef.classList.add('valid')
+          console.log('true')
+     }
+     
 }

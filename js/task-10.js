@@ -28,11 +28,11 @@ function onDestroyBtnClick() {
 function createBoxes(amount) {
 
   for (let i = 0; i < Number(amount); i += 1){
-    console.log(amount)
+   
     const box = `<div class = "box"></div>`;
    
     allBoxes = allBoxes + box;
-    console.log(allBoxes)
+    console.log(allBoxes[1])
   }
    
   boxesContainerRef.insertAdjacentHTML("afterbegin", allBoxes);
