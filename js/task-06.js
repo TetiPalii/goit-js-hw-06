@@ -10,8 +10,9 @@ function onInputActionBlur(event) {
    }
      else if (event.currentTarget.classList.contains('invalid')) {
           inputRef.classList.remove('invalid');
-          inputRef.classList.add('valid')
-          console.log('true')
+         
      }
+     inputRef.classList.add('valid')
+     console.log('true')
      
 }
