@@ -32,7 +32,7 @@ function createBoxes(amount) {
     const box = `<div class = "box"></div>`;
    
     allBoxes = allBoxes + box;
-    console.log(allBoxes[1])
+    
   }
    
   boxesContainerRef.insertAdjacentHTML("afterbegin", allBoxes);

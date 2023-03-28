@@ -34,3 +34,7 @@ button {
   width:30px;
   height: 30px;
 }
+.box:nth-child(n+2){
+  width:40px;
+  height:40px;
+}
