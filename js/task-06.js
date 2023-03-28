@@ -3,7 +3,7 @@ inputRef.addEventListener('blur', onInputActionBlur);
 
 function onInputActionBlur(event) {
   
-     if (event.currentTarget.value.length !== Number(inputRef.getAttribute('data-length'))) {
+     if (event.currentTarget.value.trim().length !== Number(inputRef.getAttribute('data-length'))) {
           console.log('false'); inputRef.classList.add('invalid');
          
           
