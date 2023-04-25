@@ -9,7 +9,7 @@ function onBtnClick(event) {
     
 
     if (email.value === "" || password.value === "") {
-        console.log("Alert")
+        alert("Заповни усі поля")
     }
     else {const userData = {};
             userData.email = email.value;
